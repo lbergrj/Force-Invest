@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Depósito</fullName>
+                <default>false</default>
+                <label>Depósito</label>
+            </value>
+            <value>
+                <fullName>Saque</fullName>
+                <default>false</default>
+                <label>Saque</label>
+            </value>
+            <value>
+                <fullName>Transferência Realizada</fullName>
+                <default>false</default>
+                <label>Transferência Realizada</label>
+            </value>
+            <value>
+                <fullName>Pagamento de Ordem</fullName>
+                <default>false</default>
+                <label>Pagamento de Ordem</label>
+            </value>
+            <value>
+                <fullName>Recebimento de Ordem</fullName>
+                <default>false</default>
+                <label>Recebimento de Ordem</label>
+            </value>
+            <value>
+                <fullName>Tranferência Recebida</fullName>
+                <default>false</default>
+                <label>Tranferência Recebida</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

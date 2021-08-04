@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValorTotalContabil__c</fullName>
+    <description>Informa o valor total investido considerando as ordens de compras e vendas</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Status__c , &quot;Executada&quot;) ,
+   IF( ISPICKVAL( Tipo__c , &quot;Compra&quot;),
+       Preco__c *  QuantidadeContabil__c ,
+       PrecoMedioCompra__c *  QuantidadeContabil__c 
+   ),
+   0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Informa o valor total investido considerando as ordens de compras e vendas</inlineHelpText>
+    <label>Valor Total Contábil</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

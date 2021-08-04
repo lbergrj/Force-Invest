@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Venda_Sem_Saldo</fullName>
+    <active>true</active>
+    <description>Não permite efetuar uma venda sem o ativo na carteira ou com saldo insuficiente</description>
+    <errorConditionFormula>IF(
+	(AtivoCarteira__c == null ||   Quantidade__c &gt;  AtivoCarteira__r.QuantidadeCalculada__c) &amp;&amp;  ISPICKVAL(Tipo__c, &quot;Venda&quot;), 
+	true,
+	false
+)</errorConditionFormula>
+    <errorMessage>Não há papeis suficientes para realizar a venda</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NomeAtivo__c</fullName>
+    <description>Nome do Ativo Financeiro</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Nome do Ativo Financeiro</inlineHelpText>
+    <label>Nome do Ativo</label>
+    <length>80</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoAtivo__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de Ativo</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ação Nacional</fullName>
+                <default>false</default>
+                <label>Ação Nacional</label>
+            </value>
+            <value>
+                <fullName>Ação Internacional</fullName>
+                <default>false</default>
+                <label>Ação Internacional</label>
+            </value>
+            <value>
+                <fullName>Fundo Imobiliário</fullName>
+                <default>false</default>
+                <label>Fundo Imobiliário</label>
+            </value>
+            <value>
+                <fullName>Fundo de Investimentos</fullName>
+                <default>false</default>
+                <label>Fundo de Investimentos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

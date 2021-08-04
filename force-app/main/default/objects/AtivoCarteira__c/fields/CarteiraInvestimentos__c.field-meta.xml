@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CarteiraInvestimentos__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Relação entre Carteira e Ativos de Carteira</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Relação entre Carteira e Ativos de Carteira</inlineHelpText>
+    <label>Carteira de Investimentos</label>
+    <referenceTo>CarteiraInvestimentos__c</referenceTo>
+    <relationshipLabel>Ativos de Carteira</relationshipLabel>
+    <relationshipName>AtivosCarteira</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ativo__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Relação entre Ativos e Ativos de Carteira</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Relação entre Ativos e Ativos de Carteira</inlineHelpText>
+    <label>Ativo</label>
+    <referenceTo>Ativo__c</referenceTo>
+    <relationshipLabel>Ativos de Carteira</relationshipLabel>
+    <relationshipName>AtivosCarteira</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValorInvestidoCalculado__c</fullName>
+    <description>Calcula o valor total investido do ativo na carteira</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Calcula o valor total investido do ativo na carteira</inlineHelpText>
+    <label>Valor Investido Calculado</label>
+    <summarizedField>Ordem__c.ValorTotalContabil__c</summarizedField>
+    <summaryForeignKey>Ordem__c.AtivoCarteira__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
