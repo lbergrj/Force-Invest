@@ -14,7 +14,5 @@ public class AtivoCarteiraModel {
         this.totalInvestido = at.ValorInvestidoCalculado__c;
         this.saldoTotalCarteira = at.CarteiraInvestimentos__r.Saldo__c;
     }
-    
-    
 
 }
