@@ -3,7 +3,7 @@
     <fullName>VariacaoPorCento__c</fullName>
     <description>Calcula o a valorização ou desvalorização  em % do ativo comparando com o preço médio de compra</description>
     <externalId>false</externalId>
-    <formula>Variacao__c /  ValorInvestido__c</formula>
+    <formula>Variacao__c /   ValorInvestidoCalculado__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Calcula o a valorização ou desvalorização  em % do ativo comparando com o preço médio de compra</inlineHelpText>
     <label>Variação (%)</label>

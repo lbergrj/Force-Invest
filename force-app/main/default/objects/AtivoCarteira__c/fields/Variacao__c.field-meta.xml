@@ -3,7 +3,7 @@
     <fullName>Variacao__c</fullName>
     <description>Calcula o a valorização ou desvalorização do ativo comparando com o preço médio de compra</description>
     <externalId>false</externalId>
-    <formula>SaldoTotalAtual__c -   ValorInvestido__c</formula>
+    <formula>SaldoTotalAtual__c -    ValorInvestidoCalculado__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Calcula o a valorização ou desvalorização do ativo comparando com o preço médio de compra</inlineHelpText>
     <label>Variação</label>
