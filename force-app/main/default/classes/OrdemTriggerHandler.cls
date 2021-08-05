@@ -3,8 +3,7 @@ public with sharing class OrdemTriggerHandler extends TriggerHandler {
 	protected override void beforeInsert(){
           System.debug('Before Insert' );
           Set<Id>SetIdAtvc= new Set<Id>();
-          Map<Id,AtivoCarteiraModel> mapAtivoCarteiraModel = new Map<Id,AtivoCarteiraModel>();
-          
+          Map<Id,AtivoCarteiraModel> mapAtivoCarteiraModel = new Map<Id,AtivoCarteiraModel>();          
           
           //Define os IDs de Ativos de carteira para montar a query para recuperar dados dos ativos de carteira
           for(Ordem__c o: (List<Ordem__c>) trigger.new){
@@ -32,19 +31,10 @@ public with sharing class OrdemTriggerHandler extends TriggerHandler {
                     mapAtivoCarteiraModel.put(atvm.Id,atvm) ;
                } 
              }             
-          }
-          
-
+          } 
           
       }
      
-     /*
-     protected override void beforeInsert(){ 
-        System.debug('After Insert' );
-         List<Ordem__c> ordensEntrada =  (List<Ordem__c>)  Trigger.new;         
-         List<Ordem__c> ordensToTpdate =  OrdemHandler.validaOrdens(ordensEntrada);        
-         update ordensToTpdate;
-    }
-    */
+     
     
 }
