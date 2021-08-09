@@ -15,9 +15,9 @@ public class OrdemHandler {
             o.Status__c = 'Cancelada por falta de saldo';
             o.PrecoMedioCompra__c = 0;
             return null;
-        }
-       
+        }       
     }
+    
     //Aplica negócio de ordem de Venda
     public static AtivoCarteiraModel handlerVenda(Ordem__c o, AtivoCarteiraModel entrada){    
         if(o.Quantidade__c <= entrada.quantidadeAtivo){

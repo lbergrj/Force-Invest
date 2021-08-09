@@ -17,18 +17,19 @@ public with sharing class OrdemTriggerHandler extends TriggerHandler {
           for (Ordem__c o : (List<Ordem__c>) trigger.new){
              System.debug(o.Tipo__c);
              if(o.Status__c == 'Executada'){
+               AtivoCarteiraModel atvmResultado =null;   
                AtivoCarteiraModel atvm = mapAtivoCarteiraModel.get(o.AtivoCarteira__c);
                if(o.Tipo__c == 'Compra'){
-                   //Para teste
-                    OrdemHandler.handlerCompra(o,atvm );
+                   //Aplica regra de neógio para ordem de compra
+                   atvmResultado = OrdemHandler.handlerCompra(o,atvm );
                }
                else if (o.Tipo__c == 'Venda'){
-                    //Para teste
-                    OrdemHandler.handlerVenda(o,atvm );
+                    //Aplica regra de neógio para ordem de venda
+                    atvmResultado = OrdemHandler.handlerVenda(o,atvm );
                }
                //Salva as alterações no modelo de ativo de carteira no mapa
                if (atvm != null){  
-                    mapAtivoCarteiraModel.put(atvm.Id,atvm) ;
+                    mapAtivoCarteiraModel.put(atvmResultado.Id,atvmResultado) ;
                } 
              }             
           } 
