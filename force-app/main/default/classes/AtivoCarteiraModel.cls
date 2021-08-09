@@ -20,10 +20,7 @@ public class AtivoCarteiraModel {
         this.quantidadeAtivo = o.AtivoCarteira__r.QuantidadeCalculada__c;
         this.totalInvestido = o.AtivoCarteira__r.ValorInvestidoCalculado__c;
         this.saldoTotalCarteira = o.AtivoCarteira__r.CarteiraInvestimentos__r.Saldo__c;
-    }
-
-    
-   
+    } 
     
     public static Map<Id,AtivoCarteiraModel> getMapFromDataBank(Set<Id> SetId){
         Map<Id,AtivoCarteiraModel> mapSaida = new Map<Id,AtivoCarteiraModel>();
@@ -37,9 +34,4 @@ public class AtivoCarteiraModel {
         }
         return mapSaida;
     }
-
-    
-
-
-
 }
